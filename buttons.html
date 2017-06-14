@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+</head>
+<body>
+<br></br>
+  <center>
+      <video id="myVideo" width="320" height="176" controls >
+      <source src="mov_bbb.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+  </center>
+<br></br>
+  <center>
+      <button id="myFunction1" class="btn btn-success btn-lg">Button 1</button>
+      <button id="myFunction2" class="btn btn-success btn-lg">Button 2</button>
+      <button id="myFunction3" class="btn btn-success btn-lg">Button 3</button>
+    <br> </br>
+      <button id="myFunction4" class="btn btn-success btn-lg">Button 4</button>
+      <button id="myFunction5" class="btn btn-success btn-lg">Button 5</button>
+      <button id="myFunction6" class="btn btn-success btn-lg">Button 6</button>
+  </center>
+
+  <script>
+  var vid = document.getElementById("myVideo");
+          function MyButtonClick()
+          {vid.play(); }
+          var button = document.getElementById("myFunction1");
+          button.onclick = MyButtonClick;
+  </script>
+  <script>
+          function MyButtonClick()
+          {vid.pause(); ;}
+          var button = document.getElementById("myFunction2");
+          button.onclick = MyButtonClick;
+  </script>
+  <script>
+          function MyButtonClick()
+          {alert("Button3");}
+          var button = document.getElementById("myFunction3");
+          button.onclick = MyButtonClick;
+  </script>
+  <script>
+          function MyButtonClick()
+          {alert("Button4");}
+          var button = document.getElementById("myFunction4");
+          button.onclick = MyButtonClick;
+  </script>
+  <script>
+          function MyButtonClick()
+          {alert("Button5");}
+          var button = document.getElementById("myFunction5");
+          button.onclick = MyButtonClick;
+  </script>
+  <script>
+          function MyButtonClick()
+          {alert("Button6");}
+          var button = document.getElementById("myFunction6");
+          button.onclick = MyButtonClick;
+  </script>
+
+</body>
+</html>
